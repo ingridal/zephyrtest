@@ -1,13 +1,22 @@
-# nRF Connect SDK with MS8607 sensor
+## nRF Connect SDK with MS8607 sensor
 
-This is the app to obtain the preassure, temperature & humidity from a I2C MikroE [MS8607]() sensor connected to pins 015 (SDA) and pins 013 (SCL) via TWI. 
-
-MS8607 sensor is a self-contained pressure, humidity and temperature sensor that is fully calibrated during manufacture. The sensor can operate from 1.5V to 3.6V. The MS8607 is ideal for weather station applications embedded into compact devices and any applications in which pressure, humidity and temperature monitoring is required.
+This is the app to obtain the pressure, temperature & humidity from an I2C MikroE MS8607 sensor. The sensor reads data over i2c and sends it via UART to the PC.
+MS8607 sensor: https://www.mikroe.com/pht-click is a self-contained pressure, humidity, and temperature sensor that is fully calibrated during manufacture. The sensor can operate from 1.5V to 3.6V.
 
 Application structure is adapted following this example: https://github.com/nrfconnect/ncs-example-application/tree/main. 
 
+Sensor drivers are created using **MS8607 sensor Generic C Driver template**: https://github.com/TEConnectivity/MS8607_Generic_C_Driver/tree/master. 
+
 ## Hardware 
-* MikroE PHT Click sensor MS8607 data sheet:https://eu.mouser.com/datasheet/2/418/5/NG_DS_MS8607-02BA01_B3-1134999.pdf . 
+* MikroE PHT Click sensor MS8607: https://eu.mouser.com/datasheet/2/418/5/NG_DS_MS8607-02BA01_B3-1134999.pdf. 
+* Target platforms: nRF52840DK (PCA10056) & nRF52840 Dongle (PCA10059) SoC. 
+
+## Development tools
+* VS Code IDE under Linux Ubuntu 22.04 LTS
+* Zephyr SDK: zephyr_sdk_0.16.0
+* nRF Connect Toolchain: 2.4.0
+* nRF Connect SDK: nRF Connect SDK 2.4.0
+* Python 3.10.10
 
 ## Getting started
 
