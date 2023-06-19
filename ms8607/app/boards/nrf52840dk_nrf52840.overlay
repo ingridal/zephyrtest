@@ -1,0 +1,36 @@
+/* This devicetree overlay file will be automatically picked by the Zephyr
+ * build system when building the application for the nrf52840dk_nrf52840 board. 
+ * Do not forget to update SCL and SDA values if the HW conections is modified!
+ */
+
+ &pinctrl {
+	i2c0_default_alt: i2c0_default_alt {
+		group1 {
+			psels = <NRF_PSEL(TWIM_SDA, 0, 15)>,
+				<NRF_PSEL(TWIM_SCL, 0, 13)>;
+		};
+	};
+
+	i2c0_sleep_alt: i2c0_sleep_alt {
+		group1 {
+			psels = <NRF_PSEL(TWIM_SDA, 0, 15)>,
+				<NRF_PSEL(TWIM_SCL, 0, 13)>;
+		};
+	};
+};
+
+&i2c0 {
+	status = "okay";
+	pinctrl-0 = <&i2c0_default_alt>;
+	pinctrl-1 = <&i2c0_sleep_alt>;
+	ms8607_h@40 {
+		compatible = "te,ms8607h";
+		reg = <0x40>;
+		label = "MS8607RH";
+	};
+	ms8607_pt@76 {
+		compatible = "te,ms8607pt";
+		reg = <0x76>;
+		label = "MS8607PT";
+	};
+};

@@ -1,0 +1,3 @@
+if SENSOR
+rsource "ms8607/Kconfig"
+endif # SENSOR

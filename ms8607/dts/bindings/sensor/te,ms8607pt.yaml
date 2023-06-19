@@ -1,0 +1,5 @@
+description: TE MS8607 Pressure and Temperature Sensor
+
+compatible: "te,ms8607pt"
+
+include: [sensor-device.yaml, i2c-device.yaml]

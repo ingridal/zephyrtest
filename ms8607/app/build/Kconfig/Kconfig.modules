@@ -1,0 +1,174 @@
+menu "ms8607 (/home/edi/zephyrsensor/ms8607)"
+osource "/home/edi/zephyrsensor/ms8607/Kconfig"
+config ZEPHYR_MS8607_MODULE
+	bool
+	default y
+endmenu
+menu "nrf (/home/edi/zephyrsensor/nrf)"
+osource "/home/edi/zephyrsensor/nrf/Kconfig.nrf"
+config ZEPHYR_NRF_MODULE
+	bool
+	default y
+endmenu
+menu "hostap (/home/edi/zephyrsensor/modules/lib/hostap)"
+osource "/home/edi/zephyrsensor/modules/lib/hostap/zephyr/Kconfig"
+config ZEPHYR_HOSTAP_MODULE
+	bool
+	default y
+endmenu
+menu "mcuboot (/home/edi/zephyrsensor/bootloader/mcuboot)"
+osource "$(ZEPHYR_MCUBOOT_KCONFIG)"
+config ZEPHYR_MCUBOOT_MODULE
+	bool
+	default y
+endmenu
+menu "mbedtls (/home/edi/zephyrsensor/modules/crypto/mbedtls)"
+osource "$(ZEPHYR_MBEDTLS_KCONFIG)"
+config ZEPHYR_MBEDTLS_MODULE
+	bool
+	default y
+endmenu
+menu "trusted-firmware-m (/home/edi/zephyrsensor/modules/tee/tf-m/trusted-firmware-m)"
+osource "$(ZEPHYR_TRUSTED_FIRMWARE_M_KCONFIG)"
+config ZEPHYR_TRUSTED_FIRMWARE_M_MODULE
+	bool
+	default y
+endmenu
+menu "cjson (/home/edi/zephyrsensor/modules/lib/cjson)"
+osource "$(ZEPHYR_CJSON_KCONFIG)"
+config ZEPHYR_CJSON_MODULE
+	bool
+	default y
+endmenu
+menu "azure-sdk-for-c (/home/edi/zephyrsensor/modules/lib/azure-sdk-for-c)"
+osource "$(ZEPHYR_AZURE_SDK_FOR_C_KCONFIG)"
+config ZEPHYR_AZURE_SDK_FOR_C_MODULE
+	bool
+	default y
+endmenu
+menu "cirrus-logic (/home/edi/zephyrsensor/modules/hal/cirrus-logic)"
+osource "/home/edi/zephyrsensor/modules/hal/cirrus-logic/Kconfig"
+config ZEPHYR_CIRRUS_LOGIC_MODULE
+	bool
+	default y
+endmenu
+menu "openthread (/home/edi/zephyrsensor/modules/lib/openthread)"
+osource "$(ZEPHYR_OPENTHREAD_KCONFIG)"
+config ZEPHYR_OPENTHREAD_MODULE
+	bool
+	default y
+endmenu
+menu "memfault-firmware-sdk (/home/edi/zephyrsensor/modules/lib/memfault-firmware-sdk)"
+osource "/home/edi/zephyrsensor/modules/lib/memfault-firmware-sdk/ports/zephyr/Kconfig"
+config ZEPHYR_MEMFAULT_FIRMWARE_SDK_MODULE
+	bool
+	default y
+endmenu
+menu "canopennode (/home/edi/zephyrsensor/modules/lib/canopennode)"
+osource "$(ZEPHYR_CANOPENNODE_KCONFIG)"
+config ZEPHYR_CANOPENNODE_MODULE
+	bool
+	default y
+endmenu
+menu "chre (/home/edi/zephyrsensor/modules/lib/chre)"
+osource "/home/edi/zephyrsensor/modules/lib/chre/platform/zephyr/Kconfig"
+config ZEPHYR_CHRE_MODULE
+	bool
+	default y
+endmenu
+menu "fatfs (/home/edi/zephyrsensor/modules/fs/fatfs)"
+osource "$(ZEPHYR_FATFS_KCONFIG)"
+config ZEPHYR_FATFS_MODULE
+	bool
+	default y
+endmenu
+menu "hal_nordic (/home/edi/zephyrsensor/modules/hal/nordic)"
+osource "$(ZEPHYR_HAL_NORDIC_KCONFIG)"
+config ZEPHYR_HAL_NORDIC_MODULE
+	bool
+	default y
+endmenu
+menu "liblc3 (/home/edi/zephyrsensor/modules/lib/liblc3)"
+osource "$(ZEPHYR_LIBLC3_KCONFIG)"
+config ZEPHYR_LIBLC3_MODULE
+	bool
+	default y
+endmenu
+menu "littlefs (/home/edi/zephyrsensor/modules/fs/littlefs)"
+osource "$(ZEPHYR_LITTLEFS_KCONFIG)"
+config ZEPHYR_LITTLEFS_MODULE
+	bool
+	default y
+endmenu
+menu "loramac-node (/home/edi/zephyrsensor/modules/lib/loramac-node)"
+osource "$(ZEPHYR_LORAMAC_NODE_KCONFIG)"
+config ZEPHYR_LORAMAC_NODE_MODULE
+	bool
+	default y
+endmenu
+menu "lvgl (/home/edi/zephyrsensor/modules/lib/gui/lvgl)"
+osource "/home/edi/zephyrsensor/modules/lib/gui/lvgl/zephyr/Kconfig"
+config ZEPHYR_LVGL_MODULE
+	bool
+	default y
+endmenu
+menu "lz4 (/home/edi/zephyrsensor/modules/lib/lz4)"
+osource "$(ZEPHYR_LZ4_KCONFIG)"
+config ZEPHYR_LZ4_MODULE
+	bool
+	default y
+endmenu
+menu "nanopb (/home/edi/zephyrsensor/modules/lib/nanopb)"
+osource "$(ZEPHYR_NANOPB_KCONFIG)"
+config ZEPHYR_NANOPB_MODULE
+	bool
+	default y
+endmenu
+menu "picolibc (/home/edi/zephyrsensor/modules/lib/picolibc)"
+osource "/home/edi/zephyrsensor/modules/lib/picolibc/zephyr/Kconfig"
+config ZEPHYR_PICOLIBC_MODULE
+	bool
+	default y
+endmenu
+menu "segger (/home/edi/zephyrsensor/modules/debug/segger)"
+osource "$(ZEPHYR_SEGGER_KCONFIG)"
+config ZEPHYR_SEGGER_MODULE
+	bool
+	default y
+endmenu
+menu "TraceRecorder (/home/edi/zephyrsensor/modules/debug/TraceRecorder)"
+osource "/home/edi/zephyrsensor/modules/debug/TraceRecorder/kernelports/Zephyr/Kconfig"
+config ZEPHYR_TRACERECORDER_MODULE
+	bool
+	default y
+endmenu
+menu "uoscore-uedhoc (/home/edi/zephyrsensor/modules/lib/uoscore-uedhoc)"
+osource "$(ZEPHYR_UOSCORE_UEDHOC_KCONFIG)"
+config ZEPHYR_UOSCORE_UEDHOC_MODULE
+	bool
+	default y
+endmenu
+menu "zcbor (/home/edi/zephyrsensor/modules/lib/zcbor)"
+osource "$(ZEPHYR_ZCBOR_KCONFIG)"
+config ZEPHYR_ZCBOR_MODULE
+	bool
+	default y
+endmenu
+menu "zscilib (/home/edi/zephyrsensor/modules/lib/zscilib)"
+osource "/home/edi/zephyrsensor/modules/lib/zscilib/Kconfig.zscilib"
+config ZEPHYR_ZSCILIB_MODULE
+	bool
+	default y
+endmenu
+menu "nrfxlib (/home/edi/zephyrsensor/nrfxlib)"
+osource "/home/edi/zephyrsensor/nrfxlib/Kconfig.nrfxlib"
+config ZEPHYR_NRFXLIB_MODULE
+	bool
+	default y
+endmenu
+menu "connectedhomeip (/home/edi/zephyrsensor/modules/lib/matter)"
+osource "/home/edi/zephyrsensor/modules/lib/matter/config/nrfconnect/chip-module/Kconfig"
+config ZEPHYR_CONNECTEDHOMEIP_MODULE
+	bool
+	default y
+endmenu

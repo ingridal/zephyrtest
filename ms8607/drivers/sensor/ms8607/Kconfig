@@ -1,0 +1,28 @@
+config MS8607
+	bool "MS8607 PHT Combination Sensor"
+	default y
+	depends on DT_HAS_TE_MS8607H_ENABLED || DT_HAS_TE_MS8607PT_ENABLED
+	select I2C
+	help
+	  Enable driver for MS8607 PHT Combination Sensor.
+
+if MS8607
+	config MS8607_HUMIDITY
+		bool "Humidity Sensor"
+		depends on DT_HAS_TE_MS8607H_ENABLED
+		default y
+		help 
+			Enable the Humidity Sensor Part
+
+	config MS8607_PRESSURE_TEMPERATURE
+		bool "Pressure and Temperature Sensor"
+		depends on DT_HAS_TE_MS8607PT_ENABLED
+		default y
+		help 
+			Enable the Pressure and Temperature Sensor Part
+				   
+module = MS8607
+module-str = MS8607
+source "${ZEPHYR_BASE}/subsys/logging/Kconfig.template.log_config"
+
+endif # MS8607

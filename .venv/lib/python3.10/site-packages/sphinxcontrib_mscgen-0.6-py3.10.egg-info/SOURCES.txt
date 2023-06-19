@@ -1,0 +1,15 @@
+CHANGES
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+sphinxcontrib/__init__.py
+sphinxcontrib/mscgen.py
+sphinxcontrib_mscgen.egg-info/PKG-INFO
+sphinxcontrib_mscgen.egg-info/SOURCES.txt
+sphinxcontrib_mscgen.egg-info/dependency_links.txt
+sphinxcontrib_mscgen.egg-info/namespace_packages.txt
+sphinxcontrib_mscgen.egg-info/not-zip-safe
+sphinxcontrib_mscgen.egg-info/requires.txt
+sphinxcontrib_mscgen.egg-info/top_level.txt

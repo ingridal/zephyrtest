@@ -1,0 +1,3 @@
+zephyr_library()
+zephyr_library_sources_ifdef(CONFIG_MS8607_PRESSURE_TEMPERATURE ms8607pt.c)
+zephyr_library_sources_ifdef(CONFIG_MS8607_HUMIDITY ms8607h.c)
