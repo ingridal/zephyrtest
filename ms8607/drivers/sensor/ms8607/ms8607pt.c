@@ -198,7 +198,7 @@ static int ms8607pt_sample_fetch(const struct device *dev,
 	// Now read pressure
 	cmd = data->resolution * 2;
 	cmd |= PSENSOR_START_PRESSURE_ADC_CONVERSION;
-	rc = ms8607pt_conversion_and_read_adc(dev, cmd, &adc_temperature);
+	rc = ms8607pt_conversion_and_read_adc(dev, cmd, &adc_pressure);
 	if (rc != 0) {
 		LOG_ERR("Failed to read pressure error %d", rc);
 		return rc;
