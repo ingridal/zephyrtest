@@ -4,7 +4,7 @@ This is the app to obtain the pressure, temperature & humidity from an I2C Mikro
 
 MS8607 sensor [PHT Click](https://www.mikroe.com/pht-click) is a self-contained pressure, humidity, and temperature sensor that is fully calibrated during manufacture. The sensor can operate from 1.5V to 3.6V. The MS8607 is ideal for weather station applications embedded into compact devices and any applications in which pressure, humidity, and temperature monitoring is required.
 
-Application structure is adapted following this example: https://github.com/nrfconnect/ncs-example-application/tree/main.
+The application structure is adapted following this example: https://github.com/nrfconnect/ncs-example-application/tree/main to invoke anything from Zephyr and nRF Zephyr with minimum modification.
 
 Sensor drivers are created using [MS8607 sensor Generic C Driver template](https://github.com/TEConnectivity/MS8607_Generic_C_Driver/tree/master). 
 
