@@ -19,7 +19,7 @@ Sensor drivers are created using [MS8607 sensor Generic C Driver template](https
 * nRF Connect Toolchain: 2.4.0
 * nRF Connect SDK: nRF Connect SDK 2.4.0
 * Python 3.10.10
-* Cutecom graphical serial terminal for connection testing.
+* [Cutecom](https://gitlab.com/cutecom/cutecom/) graphical serial terminal for connection testing.
 
 ## Getting started
 
