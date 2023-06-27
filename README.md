@@ -10,7 +10,7 @@ Sensor drivers are created using [MS8607 sensor Generic C Driver template](https
 
 ## Hardware 
 * MikroE PHT Click sensor MS8607 data sheet:https://eu.mouser.com/datasheet/2/418/5/NG_DS_MS8607-02BA01_B3-1134999.pdf .
-* Target platforms: nRF52840DK (PCA10056) & [nRF52840 Dongle (PCA10059) ](https://lv.mouser.com/new/nordic-semiconductor/nordic-nrf52840-usb-dongle/) SoC. 
+* Target platforms: [nRF52840DK (PCA10056)](https://lv.mouser.com/new/nordic-semiconductor/nordic-nrf52840-dev-kit/) & [nRF52840 Dongle (PCA10059) ](https://lv.mouser.com/new/nordic-semiconductor/nordic-nrf52840-usb-dongle/) SoC. 
 * nRF52840 Product specification is available [HERE](https://infocenter.nordicsemi.com/index.jsp?topic=%2Fps_nrf52840%2Fkeyfeatures_html5.html).
 
 ## Development tools
