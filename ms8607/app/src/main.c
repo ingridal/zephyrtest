@@ -39,7 +39,7 @@ void main(void)
 
 	ret = ms8607_disable_heater(ms8607_h_dev);
 	if (ret != 0) {
-		LOG_ERR("Failed to enable heater");
+		LOG_ERR("Failed to disable heater");
 		return;
 	}
 
